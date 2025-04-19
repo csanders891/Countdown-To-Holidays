@@ -83,9 +83,10 @@ for(var i =0; i < holidays.length; i++)
              alert(holiday + " is today");
             
         //make verb and noun singular if holiday is tomorrow
-        else if(daysRemaining > 1)
+        else if(daysRemaining == 1)
             alert("There is " + daysRemaining + " day left until " + holiday);
 
-        else 
+        //make verb and noun plural if there are 2 or more days left until that holiday
+        else if(daysRemaining > 1)
             alert("There are " + daysRemaining + " days left until " + holiday);
     }
